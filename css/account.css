@@ -1,0 +1,30 @@
+#account th,#account td{
+    text-align: center;
+}
+.form-group input{
+    width: 150px;
+
+}
+#account .form-group label {
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    width: 100px;
+    color:#222;
+    text-align: right;
+}
+#account .form-group label:first-child {
+    margin-left: -50px;
+}
+#account .form-group a{
+    margin-left: 20px;
+}
+#account  .form-group{
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+}
+#addUser label{
+    text-align:right;
+    width: 225px;
+    color: #AAAAAA;
+}

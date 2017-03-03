@@ -1,0 +1,27 @@
+#myTestresult div.main_center_middle>div:first-child>div{
+    font-weight: bold;
+    background: #F5F5F5;
+    border: 0;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 2px solid #DDDDDD;
+}
+#myTestresult div.main_center_middle div{
+    text-align: center;
+    background: #ffffff;
+    border: 0;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #eeeeee;
+}
+#myTestresult div.main_center_middle>div:hover div{
+    background: #e3e3e3;
+}
+#myTestresult>p{
+    margin: 20px 0;
+}
+#myTestresult>p select{
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
