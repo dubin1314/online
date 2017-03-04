@@ -2,6 +2,18 @@
     text-align: center;
 }
 .form-group input{
-    width: 150px;
+    
 
+}
+#addTest input{
+    margin-top: 5px;
+
+}
+#addTest select{
+    width: 100px;
+    margin-top: 5px;
+}
+textarea{
+    width: 100%;
+    height: 200px;
 }
