@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>在线考试系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="icon" href="image/logo.png"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/layui.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="css/myTest.css"/>
+</head>
+<body>
+<div id="header"></div>
+<div id="main">
+    <div id="aside" class="aside-container"></div>
+    <div id="center_container">
+        <!--新增试题-->
+        <div class="layui-form" id="manageTest">
+            <div class="main_center_top">
+                <h3>新增试题</h3>
+            </div>
+            <p>填写下面的表单，创建新的试题。选择不同的试题类型，需要填写的表单也各不相同。
+            </p>
+            <p>
+                <button data-toggle="modal" data-target="#addUser" class="btn btn-info">新增试题</button><button data-toggle="modal" data-target="#addUser" class="btn btn-info">管理试题</button>
+            </p>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">试题类型：</label>
+                <div class="layui-input-inline">
+                    <select name="quiz1">
+                        <option value="1">单选题</option>
+                        <option value="2" selected="">多选题</option>
+                        <option value="3">判断题</option>
+                        <option value="4">实操题</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">所属题库：</label>
+                <div class="layui-input-inline">
+                    <select name="quiz1">
+                        <option value="0">题库一</option>
+                        <option value="1" selected="">题库二<option>
+                        <option value="2">题库三</option>
+                        <option value="3">题库四</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">试题状态：</label>
+                <div class="layui-input-inline">
+                    <select name="quiz1">
+                        <option value="1">开放</option>
+                        <option value="2" selected="">关闭</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">编辑器</label>
+                <div class="layui-input-block">
+                    <textarea class="layui-textarea layui-hide" name="content" lay-verify="content" id="LAY_demo_editor"></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">选项设置：</label>
+                    <div class="layui-input-block">
+                        <label class="layui-form-label">选项A<input type="radio" name="sex" value="0"></label>
+                        <div class="layui-input-block">
+                            <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+                        </div>
+                        <div class="layui-input-block">
+                            <label class="layui-form-label">选项A<input type="radio" name="sex" value="0"></label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-input-block">
+                            <label class="layui-form-label">选项A<input type="radio" name="sex" value="0"></label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/layui.all.js" charset="utf-8"></script>
+<script src="js/main.js"></script>
+<script src="js/creatTest.js"></script>
+</body>
+</html>
